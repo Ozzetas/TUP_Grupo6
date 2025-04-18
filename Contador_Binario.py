@@ -18,11 +18,11 @@ for i in range(16):
     else:
         numero_binario = ""
         while i > 0:
-            #Calculamos el resto y lo convertimos a String para poder concatenarlo en lugar de sumarlo
+            #Calculamos el resto y lo convertimos a String para poder concatenarlo en lugar de sumarlo. Lo agrega al inicio.S
             numero_binario = str(i % 2) + numero_binario
-            #Calculamos el cociente de la division entera
+            #Aca estamos sobreescribiendo i con el resultado de la division entera
             i = i // 2
-        #Le sumamos un 1 a la variable numero para poder mostrarlo por pantalla
+        #Le sumamos un 1 a la variable numero para poder mostrarlo por pantalla,no podemos mostrar i porque esta sobreescrita
         numero = numero + 1
         print(f"El numero decimal {numero} en binario es: {numero_binario}")
         #Utilizamos la funcion time.sleep() para retardar 1 segundo cada ciclo
